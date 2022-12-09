@@ -1,5 +1,5 @@
 body{
-    background-color: #2A2420;
+    background-color: #fafafa;
 }
 h1{
     text-align: center;
@@ -9,15 +9,12 @@ h4{
   font-size: 16px;
   font-weight: 700;
 }
-
-header {
-  padding: 20px 0 0 0 ;
-  text-align: center;
-}
 .navct {
-    color: white;
+    text-align: left;
+    color: rgb(0, 0, 0);
     padding-top: 5px;
     text-transform: uppercase;
+    
 }
 @media (min-width:750px){
     header{
@@ -25,6 +22,12 @@ header {
     }
 }
 ul{
+    list-style: none;
+    
+
+}
+
+li{
     list-style: none;
 }
 #hero{
@@ -35,10 +38,10 @@ ul{
     background-position: center;
     background-size: cover;
     height: 700px;
+    margin: 0;
 }
 #hero ::before{
     content: "";
-    ;
     position: absolute;
     top: 0;
     min-height: 100%;
@@ -47,25 +50,48 @@ ul{
     z-index: -1;
 
 }
-#encabezado{
-   margin: 30px 0;
+.header{
+    background-color:#e7e7e74f;
+
+}
+.logo {
+    height: 50px;
+    width: 40px;
+}
+.navegacion{
+    display: flex;
+    justify-content: center;
 }
 .submenu{
-    position: relative;
+    position:relative;
 }
 .submenu #carrito {
-    display: none;
+    display:none;
 }
-
+.submenu #img-carrito {
+    padding: 20px 0  0 0;
+    width: 30px;
+    height: 30px;
+}
+.navegacion a{
+    transition: all 0.8s ease;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    float: left;    
+    display: block;
+    text-align: center;
+    padding: 20px 90px;
+    text-decoration: none;
+}
 .submenu:hover #carrito{
     display: block;
     position: absolute;
     right: 0;
-    color: white;
+    color: rgb(255, 255, 255);
     top: 100%;
     z-index: 1;
-    background-color: #2A2420;
-    padding: 20;
+    background-color: #649185;
+    padding: 10;
     min-height: 400px;
     min-width: 300px;
 }
@@ -79,7 +105,7 @@ ul{
 
 .contenido-hero{
     padding-top: 120px;
-    margin-top: 80px;
+    margin-top: none;
     color: white;
 }
 .contenido-hero form{
@@ -100,11 +126,103 @@ ul{
     padding: 0;
     display: block;
     
-    text-align: -9999px;
+    text-align: -999999999999px;
     width: 50px;
     background-image: url(../images/lupa\ \(1\).png);
     background-position-y: center;
     background-position: center;
     background-repeat: no-repeat;
     border: none;
+}
+.barra {
+    padding: 20px  0px;
+    align-content: center;
+    background: #0c4d2a;
+}
+.barra h6{
+    margin: 0;
+    color: white;
+
+    text-align: center;
+  }
+.barra p {
+  margin: 0;
+  color: white;
+  text-align:center;
+}
+
+.icono{
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 70px;
+    background-size: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media (min-widh: 720px){
+    .icono{
+        margin-bottom: 0;
+    }
+}
+.icono1 {
+    background-image: url(../images/gamepad.png);
+}
+.icono2 {
+    background-image: url(../images/comercio.png);
+}
+.icono3 {
+    background-image: url(../images/virtual\ \(1\).png);
+}
+#lista-productos .row{
+    margin-bottom: 20px;
+}
+.agregar-c {
+    margin: 10px 0;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 0 25px 98px 0 rgb( 0 0 0 / 3%);
+    background: #362d27;
+}
+
+@media (min-width :550px){
+    
+    .card{
+     text-align: left;
+        
+    }
+}
+.info-card {
+    padding: 10px 20px;
+    color: white;
+}
+.info-card p,.card h4{
+    margin-bottom: 5;
+}
+
+.info-card .precio {
+    margin: 0;
+    text-decoration: line-through;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .new {
+    margin:0;
+    font-size: 20px;
+    width: 10px;
+}
+
+.footer{
+    border-top: 1px solid rgb(3, 2, 2);
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.footer .menu a{
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    text-decoration: none;
 }
