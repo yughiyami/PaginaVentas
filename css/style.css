@@ -24,3 +24,87 @@ header {
         text-align: left;
     }
 }
+ul{
+    list-style: none;
+}
+#hero{
+    background-image: url(../images/1200x630_razerstore-london-page_OG.jpg) ;
+    position: relative;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+#hero ::before{
+    content: "";
+    ;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left :0 ;
+    right: 0;
+    z-index: -1;
+
+}
+#encabezado{
+   margin: 30px 0;
+}
+.submenu{
+    position: relative;
+}
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    color: white;
+    top: 100%;
+    z-index: 1;
+    background-color: #2A2420;
+    padding: 20;
+    min-height: 400px;
+    min-width: 300px;
+}
+.vacio {
+     padding: 10px;
+     background-color: crimson;
+     text-align: center;
+     border-radius: 10px;
+     color: white;
+}
+
+.contenido-hero{
+    padding-top: 120px;
+    margin-top: 80px;
+    color: white;
+}
+.contenido-hero form{
+    position: relative ;
+    margin-bottom: 0;
+}
+
+.contenido-hero form #buscador{
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.contenido-hero form .submit-buscador {
+    position: absolute ;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    
+    text-align: -9999px;
+    width: 50px;
+    background-image: url(../images/lupa\ \(1\).png);
+    background-position-y: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
